@@ -1,0 +1,10 @@
+formatter: "markdown"
+
+output:
+  file: "README.md"
+  mode: inject
+
+sections:
+  show:
+    - all
+version: ">= 0.15.0"

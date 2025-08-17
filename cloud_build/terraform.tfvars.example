@@ -1,0 +1,36 @@
+# ========================================
+# Example Terraform Variables File
+# ========================================
+# Copy this file to terraform.tfvars and update the values
+# according to your environment.
+#
+# Usage:
+#   cp terraform.tfvars.example vars/terraform.tfvars
+#   # Edit terraform.tfvars with your values
+
+# ========================================
+# Required Configuration
+# ========================================
+
+# The GCS bucket where Android ZIP files will be uploaded
+# This bucket must exist before running Terraform
+bucket_name = "my-android-builds-bucket"
+
+# Your GCP project ID
+# Find this in the GCP Console or run: gcloud config get-value project
+project_id = "my-gcp-project-id"
+
+# ========================================
+# Notification Configuration
+# ========================================
+
+# Webhook URL for build notifications
+# Examples:
+#   - Webhook.site: "https://webhook.site/your-unique-id"
+#   - Slack webhook: "https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
+#   - Custom endpoint: "https://api.example.com/builds/notify"
+webhook_url = "https://webhook.site/your-unique-id"
+
+# Enable/disable webhook notifications
+# Set to false to disable all notifications
+is_notification_enabled = true
