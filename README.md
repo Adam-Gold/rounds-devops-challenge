@@ -34,7 +34,7 @@ Create a `terraform.tfvars` file or use the example:
 
 ```bash
 cd cloud_build
-cp terraform.tfvars.example vars/terraform.tfvars
+cp vars/terraform.tfvars.example vars/terraform.tfvars
 ```
 
 Edit the values according to your environment:
